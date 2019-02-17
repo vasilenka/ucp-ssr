@@ -7,7 +7,8 @@ import Loadable from "react-loadable";
 import NotFound from "./not-found";
 
 const Homepage = Loadable({
-  loader: () => import(/* webpackChunkName: "homepage" */ "./homepage"),
+  loader: () =>
+    import(/* webpackChunkName: "homepage" */ "./Homepage/Homepage"),
   loading: () => null,
   modules: ["homepage"]
 });
@@ -19,7 +20,8 @@ const About = Loadable({
 });
 
 const Dashboard = Loadable({
-  loader: () => import(/* webpackChunkName: "dashboard" */ "./dashboard"),
+  loader: () =>
+    import(/* webpackChunkName: "dashboard" */ "./DashboardPage/DashboardPage"),
   loading: () => null,
   modules: ["dashboard"]
 });
