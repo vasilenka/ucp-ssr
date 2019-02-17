@@ -1,0 +1,33 @@
+@import "invoker-tokens/index.scss";
+
+.root {
+  width: 100%;
+  padding: $space-vertical-m;
+  background-color: $light-alpha-100;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-bottom: 1px solid $dark-alpha-20;
+}
+
+.menu {
+  transition: all 0.36s;
+
+  &:hover {
+    text-decoration: underline;
+    transition: all 0.28s;
+  }
+
+  &:not(:last-child) {
+    margin: $space-inline-sm;
+  }
+}
+
+.normal {
+  composes: menu;
+}
+
+.current {
+  composes: menu;
+  text-decoration: underline;
+}

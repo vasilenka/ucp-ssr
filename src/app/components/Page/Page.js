@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withRouter } from "react-router";
 import Helmet from "react-helmet";
-import logo from "../../assets/logo.jpg";
+import logo from "./mid.png";
 
 const SITE_URL =
   process.env.NODE_ENV === "development"
@@ -82,10 +82,10 @@ class Page extends Component {
   }
 
   render() {
-    const { children, id, className, ...rest } = this.props;
+    const { children, className, ...rest } = this.props;
 
     return (
-      <div id={id} className={className}>
+      <div className={className}>
         <Helmet
           htmlAttributes={{
             lang: "en",

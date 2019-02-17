@@ -8,6 +8,7 @@ import {
   getCurrentProfile,
   removeCurrentProfile
 } from "../../../modules/profile";
+import Navbar from "../../layouts/Navbar/Navbar";
 
 const frontload = async props =>
   await props.getCurrentProfile(+props.match.params.id);
@@ -35,6 +36,7 @@ class Profile extends Component {
         description={`This is user profile number ${id}`}
         image={image}
       >
+        <Navbar />
         <p>
           <b>Name:</b> {name}
         </p>

@@ -6,8 +6,11 @@ import { Frontload } from "react-frontload";
 import { ConnectedRouter } from "connected-react-router";
 import createStore from "./store";
 
-import App from "./app/app";
-import "./index.css";
+import "invoker-layout/grid.module.scss";
+import "./index.scss";
+
+import App from "./app/App";
+import "./app/assets/fonts/fonts";
 
 // Create a store and get back itself and its history object
 const { store, history } = createStore();

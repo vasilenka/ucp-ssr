@@ -1,5 +1,5 @@
-import pekka from "../app/assets/pekka.jpg";
-import arvidsson from "../app/assets/arvidsson.jpg";
+import pekka from "./img/hello.jpeg";
+import arvidsson from "./img/hopes.jpg";
 
 export const SET_CURRENT_PROFILE = "auth/SET_CURRENT_PROFILE";
 
